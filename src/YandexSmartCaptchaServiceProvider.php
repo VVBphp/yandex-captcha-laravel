@@ -25,10 +25,6 @@ class YandexSmartCaptchaServiceProvider extends ServiceProvider
             return app(Services\YandexSmartCaptchaService::class)->verify($value);
         });
 
-        $this->app['validator']->replacer('smartcaptcha', function ($message, $attribute, $rule, $parameters) {
-            return str_replace(':attribute', $attribute, 'Проверка капчи не пройдена.');
-        });
-
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'yandex-smart-captcha');
     }
 }

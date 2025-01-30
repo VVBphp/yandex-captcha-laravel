@@ -11,7 +11,7 @@ class YandexSmartCaptchaRule implements ValidationRule
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         if (!app(YandexSmartCaptchaService::class)->verify($value)) {
-            $fail('The :attribute is invalid.');
+            $fail('Проверка капчи не пройдена.');
         }
     }
 }
