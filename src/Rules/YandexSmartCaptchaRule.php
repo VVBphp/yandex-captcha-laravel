@@ -12,8 +12,8 @@ class YandexSmartCaptchaRule implements ValidationRule
     protected string $emptyMessage;
 
     public function __construct(
-        string $message = 'Неверная капча',
-        string $emptyMessage = 'Подтвердите, что вы человек'
+        string $message = 'Неверная капча!',
+        string $emptyMessage = 'Пожалуйста, пройдите проверку'
     ) {
         $this->message = $message;
         $this->emptyMessage = $emptyMessage;
