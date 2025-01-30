@@ -21,10 +21,6 @@ class YandexSmartCaptchaServiceProvider extends ServiceProvider
             __DIR__.'/../config/yandex-smart-captcha.php' => config_path('yandex-smart-captcha.php'),
         ]);
 
-        $this->app['validator']->extend('smartcaptcha', function ($attribute, $value, $parameters, $validator) {
-            return app(Rules\YandexSmartCaptchaRule::class)->verify($value);
-        });
-
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'yandex-smart-captcha');
     }
 }
