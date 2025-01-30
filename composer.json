@@ -18,7 +18,7 @@
             "email": "bliskunvv@yandex.ru"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
