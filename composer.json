@@ -1,0 +1,32 @@
+{
+    "name": "vvb/yandex-smart-captcha",
+    "description": "Yandex Smart Captcha integration for Laravel 10/11",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "vvb\\YandexSmartCaptcha\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VVBphp",
+            "email": "bliskunvv@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vvb\\YandexSmartCaptcha\\YandexSmartCaptchaServiceProvider"
+            ],
+            "aliases": {
+                "YandexSmartCaptcha": "vvb\\YandexSmartCaptcha\\Facades\\YandexSmartCaptcha"
+            }
+        }
+    }
+}
