@@ -1,5 +1,4 @@
 <div id="smartcaptcha-container"></div>
-<input type="hidden" name="smartcaptcha_token" id="smartcaptcha-token">
 
 <script src="https://smartcaptcha.yandexcloud.net/captcha.js?render=onload&onload=onloadSmartCaptchaFunction" defer></script>
 <script>
