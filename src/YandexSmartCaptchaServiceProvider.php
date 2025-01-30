@@ -22,7 +22,7 @@ class YandexSmartCaptchaServiceProvider extends ServiceProvider
         ]);
 
         $this->app['validator']->extend('smartcaptcha', function ($attribute, $value, $parameters, $validator) {
-            return app(Services\YandexSmartCaptchaService::class)->verify($value);
+            return app(Rules\YandexSmartCaptchaRule::class)->verify($value);
         });
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'yandex-smart-captcha');
