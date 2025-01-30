@@ -8,6 +8,7 @@ class YandexSmartCaptchaServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/yandex-smart-captcha.php', 'yandex-smart-captcha');
         $this->app->singleton('yandex-smart-captcha', function () {
             return new Services\YandexSmartCaptchaService(
                 config('yandex-smart-captcha.client_key'),
