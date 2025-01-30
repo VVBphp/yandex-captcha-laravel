@@ -18,5 +18,15 @@
             "email": "bliskunvv@yandex.ru"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vvb\\YandexSmartCaptcha\\YandexSmartCaptchaServiceProvider"
+            ],
+            "aliases": {
+                "YandexSmartCaptcha": "vvb\\YandexSmartCaptcha\\Facades\\YandexSmartCaptcha"
+            }
+        }
+    }
 }
