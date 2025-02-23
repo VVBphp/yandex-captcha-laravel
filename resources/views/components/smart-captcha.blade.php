@@ -13,6 +13,7 @@
                 hl: 'ru',
             });
             grecaptcha = widgetId;
+            console.log(grecaptcha,widgetId)
         }
     }
 </script>
