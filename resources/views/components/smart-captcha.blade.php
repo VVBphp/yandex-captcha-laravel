@@ -12,7 +12,7 @@
                 sitekey: '{{ config("yandex-smart-captcha.client_key") }}',
                 hl: 'ru',
             });
-            grecaptcha = widgetId;
+            grecaptcha = window.smartCaptcha;
             console.log(grecaptcha,widgetId)
         }
     }
