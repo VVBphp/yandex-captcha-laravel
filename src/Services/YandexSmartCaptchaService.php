@@ -18,7 +18,7 @@ class YandexSmartCaptchaService
 
     public function verify(string $token): bool
     {
-        $response = Http::asForm()
+        $response = Http::asForm()->timeout(30)
             ->post('https://smartcaptcha.yandexcloud.net/validate', [
                 'secret' => $this->serverKey,
                 'token' => $token,
