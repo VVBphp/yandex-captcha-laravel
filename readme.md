@@ -9,7 +9,7 @@
 ## Установка
 
 ```bash
-composer require your-vendor/yandex-smart-captcha
+composer require vvb/yandex-smart-captcha
 ```
 
 ## Настройка
